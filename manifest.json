@@ -2,6 +2,7 @@
   "name": "TimeLimit",
   "version": "1.0",
   "description": "Limits your time on specific websites",
+  "permissions": ["alarms", "notifications", "storage"],
   "background": {
       "scripts": ["limiter.js"],
       "persistent": false
