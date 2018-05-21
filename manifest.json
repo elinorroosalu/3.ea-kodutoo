@@ -1,0 +1,10 @@
+{
+  "name": "TimeLimit",
+  "version": "1.0",
+  "description": "Limits your time on specific websites",
+  "background": {
+      "scripts": ["limiter.js"],
+      "persistent": false
+    },
+  "manifest_version": 2
+}
