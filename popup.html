@@ -28,7 +28,11 @@ found in the LICENSE file. -->
   <body>
       <!-- An Alarm delay of less than the minimum 1 minute will fire
       in approximately 1 minute incriments if released -->
-      <button id='Minute' value='1'>Minute</button>
+      <span>Minutes:</span>
+      <input id='Minutes' type='text'></input>
+      <span>Reason:</span>
+      <input id='notificationInput' type='text'></input>
+      <button id='submitAlarm'>Create Alarm</button>
       <button id='cancelAlarm'>Cancel Alarm</button>
    <!-- link to non-persistent background script -->
    <script src="popup.js"></script>

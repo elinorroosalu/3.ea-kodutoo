@@ -4,16 +4,13 @@
 'use strict';
 
 chrome.alarms.onAlarm.addListener(function() {
-  chrome.browserAction.setBadgeText({text: ''});
-  chrome.notifications.create({
-      type:     'basic',
-      title:    'Meeldetuletus',
-      message:  'sisestatud meeldetuletus',
-      buttons: [
-        {title: 'nupuke'}
-      ],
-      priority: 0});
+      let notification = new Notification('Got to go!', {
+      icon: 'stopwatchlarge.png',
+      body: 'gottago',
+    });
+    chrome.browserAction.setBadgeText({text: ''});
 });
+
 
 chrome.notifications.onButtonClicked.addListener(function() {
   chrome.storage.sync.get(['minutes'], function(item) {
