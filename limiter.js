@@ -4,11 +4,17 @@
 'use strict';
 
 chrome.alarms.onAlarm.addListener(function() {
-      let notification = new Notification('Got to go!', {
-      icon: 'stopwatchlarge.png',
-      body: 'gottago',
-    });
+    chrome.storage.sync.get(['reason'], function(item) {
+    let icon = 'stopwatchlarge.png';
+    let text = item.reason;
+    let title = 'Got to go!';
+    let options = {
+      body: text,
+      icon: icon,
+    }
+    let notification = new Notification(title, options);
     chrome.browserAction.setBadgeText({text: ''});
+  });
 });
 
 
