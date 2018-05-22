@@ -4,13 +4,12 @@
 'use strict';
 
 function setAlarm(event) {
-  let minutes = parseFloat(document.getElementById('Minutes').value);
+  let minutes = Math.abs(parseFloat(document.getElementById('Minutes').value));
   let text = document.getElementById('notificationInput').value;
   chrome.browserAction.setBadgeText({text: 'ON'});
   chrome.alarms.create({delayInMinutes: minutes});
   chrome.storage.sync.set({minutes: minutes});
   chrome.storage.sync.set({reason: text});
-  console.log('Value is set to ' + text);
   window.close();
 }
 
