@@ -1,7 +1,7 @@
 {
-  "name": "TimeLimit",
+  "name": "RemindMe",
   "version": "1.0",
-  "description": "Limits your time on specific websites",
+  "description": "Reminds you to leave when you are on your most intense procrastination session",
   "permissions": ["alarms", "notifications", "storage"],
   "background": {
       "scripts": ["limiter.js"],
