@@ -4,6 +4,12 @@ Kodutööna peab looma Chrome extension'i selliselt, et nõuded oleksid täidetu
 
 **Töö on soovitatav teha kahekesi!**
 
+## Autorid
+
+Marek Kivikink
+
+Elinor Roosalu
+
 ## Rakendus
 1. Kasutaja saab panna endale meeldetuletuse, mis käivitub endale valitud minutite hulga möödudes
 1. Meeldetuletusele on võimalik lisada ka väike meelespea.
