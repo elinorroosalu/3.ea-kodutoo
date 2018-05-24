@@ -4,20 +4,6 @@ found in the LICENSE file. -->
 <html>
   <head>
     <title>Notifications</title>
-    <style>
-      body {
-        text-align: center;
-      }
-
-      button {
-        margin: 5px;
-        outline: none;
-      }
-
-      button:hover {
-        outline: #80DEEA dotted thick;
-      }
-    </style>
     <link rel="stylesheet" href="style.css">
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -29,41 +15,27 @@ found in the LICENSE file. -->
   <body>
       <!-- An Alarm delay of less than the minimum 1 minute will fire
       in approximately 1 minute incriments if released -->
-    <table id="uiTable">
-      <tr>
-        <td>
-          <div id="error">1<div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span>Minutes:</span>
-        </td>
-        <td>
-          <input id='Minutes' type='number' min = '0'></input>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span>Note:</span>
-        </td>
-        <td>
-          <input id='notificationInput' type='text'></input>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button id='submitAlarm' class="button">Create Alarm</button>
-        </td>
-        <td>
-          <button id='cancelAlarm' class="button">Cancel Alarm</button>
-        </td>
-      </tr>
-      <tr>
-
-      </tr>
-    </table>
+  <div id ="main-grid">
+    <div id="item1" class="grid-item item1">
+        <span>Minutes:</span>
+    </div>
+    <div id="item2" class="grid-item item2">
+      <input id='Minutes' type='number' min = '0'></input>
+    </div>
+    <div id="item3" class="grid-item item3">
+      <span>Note:</span>
+    </div>
+    <div id="item4" class="grid-item item4">
+      <input id='notificationInput' type='text'></input>
+    </div>
+    <div id="item5" class="grid-item item5">
+      <button id='submitAlarm' class="button">Create Alarm</button>
+    </div>
+    <div id="item6" class="grid-item item6">
+      <button id='cancelAlarm' class="button">Cancel Alarm</button>
+    </div>
    <!-- link to non-persistent background script -->
    <script src="popup.js"></script>
+ </div>
   </body>
 </html>
