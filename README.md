@@ -4,9 +4,14 @@ Kodutööna peab looma Chrome extension'i selliselt, et nõuded oleksid täidetu
 
 **Töö on soovitatav teha kahekesi!**
 
+## Rakendus
+1. Kasutaja saab panna endale meeldetuletuse, mis käivitub endale valitud minutite hulga möödudes
+1. Meeldetuletusele on võimalik lisada ka väike meelespea.
+1. Alarmi käivitudes kuvatakse desktop notification ja heli.
+
 ## Nõuded
 
-1. Kirjelda README.md failis, mida rakendus teeb. 
+1. Kirjelda README.md failis, mida rakendus teeb.
 1. Rakendus peab tegema külastatava veebilehe/veebirakenduse kas ilusamaks, mugavamaks või huvitamaks.
 1. Peab oleama piisavalt keerukas (midagi enemat kui tunnis tegmine)
 1. Ole loominguline, näiteks põnevad asjad millele saab brauser ligi, kuid nendega on keeruline toimetada.
